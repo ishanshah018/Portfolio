@@ -7,6 +7,7 @@ import Header from './Components/Header/Header'
 import Nav from './Components/Nav/Nav'
 import Portfolio from './Components/Portfolio/Portfoio'
 import Skills from './Components/Skills/Skills'
+import { Analytics } from "@vercel/analytics/react";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Skills/>
         <Portfolio/>
         <Contact/>
+        <Analytics />
       </div>
     </>
   );
