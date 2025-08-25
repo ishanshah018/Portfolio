@@ -1,0 +1,49 @@
+.preloader {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), visibility 0.7s;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader--fade {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.preloader__spinner {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.preloader__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  animation: bounce 0.8s infinite alternate;
+}
+.preloader__dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.preloader__dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  to {
+    transform: translateY(-18px) scale(1.2);
+    filter: brightness(1.2);
+  }
+}
+.preloader__text {
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Jost', sans-serif;
+}

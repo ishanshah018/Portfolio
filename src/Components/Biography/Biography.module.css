@@ -1,0 +1,277 @@
+.Biography_wrapper{
+    align-items: center;
+}
+.Biography_wrapper p{
+    font-size: 22px;
+    width: 60%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.biography_Cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+.biography_Cards .card{
+    padding: 10px 20px;
+    border: 4px solid #000;
+    text-align: center;
+}
+.biography_Cards .card:nth-child(7){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.biography_Cards .card h2{
+    font-weight: 500;
+}
+.biography_Cards .card h2 span{
+    font-weight: 800;
+}
+
+.Download_btn{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LineTop , .LineBottom{
+    height: 70px;
+    width: 2px;
+    background-color: #000;
+
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.LineBottom{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+
+.LineTop::after , .LineTop::before , 
+.LineBottom::after , .LineBottom::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 50px;
+    width: 2px;
+    background-color: #000;
+}
+
+.LineTop::before{
+    left: 20px;
+}
+
+.LineBottom::after , .LineBottom::before{
+    top: 20px;
+}
+
+.LineBottom::before{
+    left: 20px;
+}
+
+
+.Download_btn:hover .LineTop::after , .Download_btn:hover .LineTop::before , 
+.Download_btn:hover .LineBottom::after , .Download_btn:hover .LineBottom::before 
+, .Download_btn:hover .LineBottom , .Download_btn:hover .LineTop
+{
+    background-color: sandybrown;
+}
+
+.DownloadBTN{
+    padding: 20px 30px;
+    background-color: sandybrown;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Download_btn:hover .DownloadBTN{
+    background-color: #1e1e1e;
+}
+
+.Experience_Education_wrapper{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.Experience_Education_wrapper .Experience_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 50px;
+}
+.Experience_Education_wrapper .Experience_cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    width: 100%;
+    padding:20px ;
+    background-color: rgba(131, 131, 131, 0.1);
+    transition: .6s;
+    border: 1px solid transparent;
+}
+.Experience_Education_wrapper .Experience_cards .card:hover{
+    background-color: rgb(244, 164, 96,0.1);
+    border-color: rgb(244, 164, 96,0.6);
+}
+.Experience_Education_wrapper .Experience_cards .card small{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.Experience_Education_wrapper .Experience_cards .card h2{
+    font-size: 35px;
+}
+.Experience_Education_wrapper .Experience_cards .card p{
+    text-align: start !important;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:1100px) {
+    .biography_Cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .biography_Cards .card:nth-child(8){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .Biography_wrapper p{
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .biography_Cards{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        gap: 20px;
+    }
+    .biography_Cards .card{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    
+    .biography_Cards .card:nth-child(8) ,  .biography_Cards .card:nth-child(7){
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .Biography_wrapper p{
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .biography_Cards .card h2{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .biography_Cards .card h2 span{
+        font-size: 16px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .Download_btn{
+        margin: 30px 0;
+    }
+
+    .LineTop, .LineBottom{
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .LineBottom{
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .DownloadBTN{
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+
+    .Experience_Education_wrapper{
+        padding: 30px 0;
+    }
+
+    .Experience_Education_wrapper .Experience_cards{
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card{
+        padding: 20px 15px;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card h2{
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card small{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Biography_wrapper p{
+        font-size: 16px;
+    }
+
+    .biography_Cards{
+        gap: 15px;
+    }
+
+    .biography_Cards .card{
+        padding: 12px 15px;
+    }
+
+    .biography_Cards .card h2{
+        font-size: 14px;
+    }
+
+    .biography_Cards .card h2 span{
+        font-size: 14px;
+    }
+
+    .DownloadBTN{
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card h2{
+        font-size: 20px;
+    }
+
+    .Experience_Education_wrapper .Experience_cards .card p{
+        font-size: 15px;
+    }
+}

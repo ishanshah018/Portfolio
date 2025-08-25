@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Jost';
+}
+
+.Header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 80px 8%;
+  border-bottom: 2px solid #000;
+}
+
+.section_title{
+  text-align: center;
+  font-size: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  position: relative;
+}
+
+.section_paragraph{
+  font-size: 22px;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.section_title::after{
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 280px;
+  height: 8px;
+  background-color: rgba(0, 00, 0, 1);
+}
+
+@media screen and (max-width:1200px) {
+  .Header_wrapper{
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .section{
+    padding: 80px 12%;
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+  .section_title{
+    font-size: 50px;
+  }
+
+  .section_paragraph{
+    font-size: 20px;
+    width: 100%;
+  }
+}
