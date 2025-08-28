@@ -29,7 +29,7 @@ function Biography () {
                     <h2>Email : <span>ishanrshah087@gmail.com</span></h2>
                 </div>
                 <div className={biographyCSS.card} data-aos="zoom-in" data-aos-delay="500">
-                    <h2>Telegram : <span>Avaliable</span></h2>
+                    <h2>Telegram : <span>Available</span></h2>
                 </div>
             </div>
 
