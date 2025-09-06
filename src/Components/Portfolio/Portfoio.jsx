@@ -19,13 +19,10 @@ function Portfolio() {
         },
         {
             id: 3,
-            title: "Figma Design to React Code - IdentityHub",
-            tech: "ReactJS, Tailwind CSS",
-            description: "Frontend development based on Figma design, implemented in React and Tailwind CSS.Demonstrates modern component-based architecture and responsive design.",
-            githubLink: "https://github.com/ishanshah018/Figma-UI-Implementation-with-React--Tailwind.",
-            liveLink: "https://ishan-work.vercel.app/",
-            figmaLink: "https://www.figma.com/design/g6NcOBlJv22SjAk7UKHIm9/IdentityHub?node-id=0-1"
-            
+            title: "Movie Review Django Web App",
+            tech: "Django, SQLite, Bootstrap",
+            description: "A web application where users can post, manage, and read movie reviews. Includes authentication, CRUD functionality, and a clean responsive interface with Bootstrap.",
+            githubLink: "https://github.com/ishanshah018/MovieReview--Django-Web-App."
         },
         {
             id: 4,
@@ -45,10 +42,12 @@ function Portfolio() {
         },
         {
             id: 6,
-            title: "Movie Review Django Web App",
-            tech: "Django, SQLite, Bootstrap",
-            description: "A web application where users can post, manage, and read movie reviews. Includes authentication, CRUD functionality, and a clean responsive interface with Bootstrap.",
-            githubLink: "https://github.com/ishanshah018/MovieReview--Django-Web-App."
+            title: "Figma Design to React Code - IdentityHub",
+            tech: "ReactJS, Tailwind CSS",
+            description: "Frontend development based on Figma design, implemented in React and Tailwind CSS.Demonstrates modern component-based architecture and responsive design.",
+            githubLink: "https://github.com/ishanshah018/Figma-UI-Implementation-with-React--Tailwind.",
+            liveLink: "https://ishan-work.vercel.app/",
+            figmaLink: "https://www.figma.com/design/g6NcOBlJv22SjAk7UKHIm9/IdentityHub?node-id=0-1"
         }
     ];
 
