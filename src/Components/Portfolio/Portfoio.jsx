@@ -39,6 +39,15 @@ function Portfolio() {
             description: "A simple car rental booking website with a user-friendly frontend. Features include car listings, rental pricing, and responsive design. Developed with HTML, CSS, and JavaScript.",
             githubLink: "https://github.com/ishanshah018/Car_Rental_Website",
             liveLink: "https://autoluxee.netlify.app/"
+        },
+        {
+            id: 6,
+            title: "Figma Design to React Code - IdentityHub",
+            tech: "ReactJS, Tailwind CSS",
+            description: "Frontend development based on Figma design, implemented in React and Tailwind CSS.Demonstrates modern component-based architecture and responsive design.",
+            githubLink: "https://github.com/ishanshah018/Figma-UI-Implementation-with-React--Tailwind.",
+            liveLink: "https://ishan-work.vercel.app/",
+            figmaLink: "https://www.figma.com/design/g6NcOBlJv22SjAk7UKHIm9/IdentityHub?node-id=0-1"
         }
     ];
 
@@ -84,6 +93,22 @@ function Portfolio() {
                                         <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
                                     </svg>
                                     Live Website
+                                </a>
+                            )}
+
+                            {project.id === 6 && project.figmaLink && (
+                                <a 
+                                    href={project.figmaLink} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={portfolioCSS.figma_button}
+                                >
+                                    <svg className={portfolioCSS.figma_icon} viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M15.5 12a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/>
+                                        <path d="M8.5 8.5a3.5 3.5 0 0 1 3.5-3.5h3.5a3.5 3.5 0 1 1 0 7H12a3.5 3.5 0 0 1-3.5-3.5Z"/>
+                                        <path d="M8.5 15.5a3.5 3.5 0 0 1 3.5-3.5h3.5a3.5 3.5 0 1 1 0 7H12a3.5 3.5 0 0 1-3.5-3.5Z"/>
+                                    </svg>
+                                    View Figma Design
                                 </a>
                             )}
                         </div>
