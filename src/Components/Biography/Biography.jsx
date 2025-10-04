@@ -14,7 +14,7 @@ function Biography () {
                     <h2>Birthday : <span>October 18 ,  2005</span></h2>
                 </div>
                 <div className={biographyCSS.card} data-aos="zoom-in" data-aos-delay="250">
-                    <h2>Age : <span>19 Years</span></h2>
+                    <h2>Age : <span>20 Years</span></h2>
                 </div>
                 <div className={biographyCSS.card} data-aos="zoom-in" data-aos-delay="300">
                     <h2>Address : <span>Ahmedabad , Gujarat,India</span></h2>

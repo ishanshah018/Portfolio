@@ -22,7 +22,7 @@ function  Header () {
             </Tilt>
             <div className={headerCSS.hero_content}>
                 <small>Hello, I am Ishan Shah ,</small>
-                <h1>Website <br /> Developer</h1>
+                <h1>Full Stack <br /> Developer</h1>
                 <p>I build modern and responsive websites.
                     <br />Always learning and improving my skills.
                     <br />Passionate about turning ideas into reality.</p>
