@@ -20,11 +20,11 @@
 }
 
 .hero_img::after{
-    height: 90%;
-    width: 90%;
-    top: 4%;
-    left: 4%;
-    border: 10px solid #000;
+    height: 105%;
+    width: 88%;
+    top: -4.5%;
+    left: 5%;
+    border: 8px solid #000;
 }
 
 .hero_img::before{
@@ -81,6 +81,10 @@
 @media screen and (max-width:500px) {
   .hero_img{
     width: 100%;
+  }
+
+  .hero_content{
+    padding-left: 10px;
   }
 
   .hero_content h1{

@@ -50,9 +50,10 @@ function Biography () {
 
                 <div className={biographyCSS.Experience_cards}>
                     <div className={biographyCSS.card}>
-                        <small>Student</small>
-                        <h2>Looking for an Internship Opportunity</h2>
-                        <p>Eager to apply my skills in real-world projects and gain industry experience.</p>
+                        <small>Intern</small>
+                        <h2>SynkrAI</h2>
+                        <span>September 2024 - Present</span>
+                        <p>I&apos;m currently interning at SynkrAI, where I get hands-on experience working on both client projects and the company&apos;s internal AI products. This dual exposure helps me develop a strong balance between real-world client requirements and innovative product development within a fast-paced tech environment.</p>
                     </div>
                 </div>
             </div>
