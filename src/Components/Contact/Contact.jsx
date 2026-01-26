@@ -34,10 +34,10 @@ function Contact() {
 
         // EmailJS configuration
         emailjs.sendForm(
-            'service_l3avrds', // You'll need to replace this with your EmailJS service ID
+            'service_pt39zhk', // You'll need to replace this with your EmailJS service ID
             'template_4bb83fl', // You'll need to replace this with your EmailJS template ID
             form.current,
-            'MBArRfIjzOCz0BMM3' // You'll need to replace this with your EmailJS public key
+            'qoIAnKG4Kw9wR6zhT' // You'll need to replace this with your EmailJS public key
         )
         .then((result) => {
             console.log('SUCCESS!', result.text);
