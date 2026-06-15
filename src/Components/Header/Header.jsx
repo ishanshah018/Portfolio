@@ -1,23 +1,23 @@
 // ...existing code...
 import headerCSS from './../Header/Header.module.css';
 
-import heroImg from './../../assets/about.webp'
+import heroImg from './../../assets/about.png'
 // ...existing code...
 import { Tilt } from "react-tilt";
 
-function  Header () {
+function Header() {
 
     const defaultOptions = {
-        max : 20,
+        max: 20,
         perspective: 2000,
-        scale : 1,
-        speed:1000
-    } 
+        scale: 1,
+        speed: 1000
+    }
 
 
     return (
         <div className={`${headerCSS.headerWrapper} section`} id="home">
-            <Tilt className={headerCSS.hero_img} options={defaultOptions }>
+            <Tilt className={headerCSS.hero_img} options={defaultOptions}>
                 <img src={heroImg} alt="" />
             </Tilt>
             <div className={headerCSS.hero_content}>
@@ -26,7 +26,7 @@ function  Header () {
                 <p>I build modern and responsive websites.
                     <br />Always learning and improving my skills.
                     <br />Passionate about turning ideas into reality.</p>
-        
+
             </div>
         </div>
     )
